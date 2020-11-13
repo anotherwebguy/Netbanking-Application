@@ -67,7 +67,7 @@
    
 ## Feedback
    Any suggestions and feedback is welcome.you can message me on Linkedin.<br />
-   [linkedin](https://www.linkedin.com/in/mohit-singh-bb50a81a5/)
+   [MOHIT-linkedin](https://www.linkedin.com/in/mohit-singh-bb50a81a5/)
    
 ## Contribute
    Contributions are always welcome!
