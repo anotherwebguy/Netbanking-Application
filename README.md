@@ -14,4 +14,4 @@
  ## Screenshots
  
  ### SignUp and Login Page
-     ![](video/ss1.png)
+     <img src="video/ss1.png">
