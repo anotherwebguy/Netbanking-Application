@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="1020.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="netbankingFX.WelcomeController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="165.0" prefWidth="387.0" style="-fx-background-color: rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0); -fx-background-radius: 4.0; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-padding: 16 16 16 16;">
+         <children>
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="354.0" text="NetbankingFX System">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <Label prefHeight="23.0" prefWidth="355.0" text="NetbankingFX System is a Management System that">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="59.0" prefHeight="23.0" prefWidth="355.0" text="can manage all your bank transactions and also">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="82.0" prefHeight="23.0" prefWidth="355.0" text="lets you do your daily needs through this one ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="105.0" prefHeight="23.0" prefWidth="355.0" text="Banking App.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="196.0" prefHeight="415.0" prefWidth="387.0" style="-fx-background-color: rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0); -fx-background-radius: 4.0; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-padding: 16 16 16 16;">
+         <children>
+            <ImageView fitHeight="118.0" fitWidth="354.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/offer-elect1st.jpg" />
+               </image>
+            </ImageView>
+            <Separator prefWidth="200.0" />
+            <ImageView fitHeight="132.0" fitWidth="334.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/unnamed.jpg" />
+               </image>
+            </ImageView>
+            <Separator prefWidth="200.0" />
+            <ImageView fitHeight="124.0" fitWidth="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/corona-fight.png" />
+               </image>
+            </ImageView>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <Label layoutX="430.0" layoutY="530.0" prefHeight="36.0" prefWidth="562.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" text="24x7 Help and Support.">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/pngtree-24h-icon-flat-vector-illustration-in-gray-on-blue-png-image_2047502.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="566.0" prefHeight="36.0" prefWidth="562.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" text="Get All in One Bank for all your Bussiness.">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/pngtree-vector-wallet-icon-png-image_515300.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="655.0" layoutY="23.0" prefHeight="30.0" prefWidth="278.0" promptText="Search......." style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: blue; -fx-background-color: white;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="895.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/search.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="427.0" layoutY="68.0" prefHeight="198.0" prefWidth="570.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #000080; -fx-background-radius: 6.0;">
+         <children>
+            <HBox fx:id="toppane" layoutX="16.0" prefHeight="75.0" prefWidth="538.0" spacing="70.0" style="-fx-background-radius: 5.0; -fx-background-color: #000080;">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <JFXButton fx:id="addmoney" accessibleText="addMenu" buttonType="RAISED" contentDisplay="TOP" prefHeight="72.0" prefWidth="148.0" style="-fx-background-color: #000080;" text="Add Money" textFill="#bebfff">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/addmoney.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="wallet" accessibleText="walletMenu" buttonType="RAISED" contentDisplay="TOP" prefHeight="72.0" prefWidth="148.0" style="-fx-background-color: #000080;" text="Wallet" textFill="#bebfff">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/wallet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="more" accessibleText="moreMenu" buttonType="RAISED" contentDisplay="TOP" prefHeight="72.0" prefWidth="148.0" style="-fx-background-color: #000080;" text="More" textFill="#bebfff">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/more.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children></HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="447.0" layoutY="162.0">
+         <children>
+            <VBox fx:id="holdpane" layoutX="6.0" layoutY="5.0" prefHeight="355.0" prefWidth="519.0" spacing="10.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="471.0" layoutY="18.0" style="-fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" text="EasyGo" textFill="#6e1d90">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="962.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/bell.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="672.0" prefWidth="1107.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="netbankingFX.HomeViewController">
+   <children>
+      <ImageView fitHeight="672.0" fitWidth="1107.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/website.jpg" />
+         </image>
+         <effect>
+            <Blend />
+         </effect>
+      </ImageView>
+      <JFXToolbar prefHeight="43.0" prefWidth="1107.0" style="-fx-background-color: black;">
+         <center>
+            <Label fx:id="txtCurrentWindow" prefHeight="36.0" prefWidth="238.0" style="-fx-text-alignment: center; -fx-font-weight: bold;" text="BANKING  FX" textFill="#2247da" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <effect>
+                  <Glow level="0.67" />
+               </effect>
+               <graphic>
+                  <Label fx:id="txtCurrentWindow1" prefHeight="36.0" prefWidth="48.0" style="-fx-text-alignment: center; -fx-font-weight: bold;" text="NET" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+         </center>
+         <left>
+            <JFXHamburger fx:id="hamburger" prefHeight="43.0" prefWidth="45.0" BorderPane.alignment="CENTER">
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXHamburger>
+         </left>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="26.93" radius="12.965" spread="0.06" width="26.93" />
+         </effect>
+      </JFXToolbar>
+      <AnchorPane fx:id="holderpane" layoutX="81.0" layoutY="50.0" prefHeight="623.0" prefWidth="1020.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="188.0" layoutY="41.0" prefHeight="638.0" prefWidth="188.0" />
+   </children>
+</AnchorPane>

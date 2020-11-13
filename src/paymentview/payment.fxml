@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleText="paymentMenu" prefHeight="623.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentview.PaymentController">
+   <children>
+      <VBox layoutX="8.0" layoutY="50.0" prefHeight="573.0" prefWidth="373.0" spacing="10.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5) dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+         <children>
+            <AnchorPane prefHeight="180.0" prefWidth="373.0" style="-fx-background-color: rgb(0, 166, 90);">
+               <children>
+                  <Pane prefHeight="180.0" prefWidth="40.0" style="-fx-background-color: rgb(0, 150, 81);" />
+                  <Label layoutX="41.0" layoutY="1.0" prefHeight="30.0" prefWidth="186.0" text="EasyGo Wallet" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="68.0" layoutY="27.0" prefHeight="6.0" prefWidth="277.0" />
+                  <Label layoutX="73.0" layoutY="29.0" prefHeight="123.0" prefWidth="267.0" text="1. Go to EasyGo Wallet option.&#10;2.Enter paybill number XXXXXX.&#10;3.Enter your bill amount.&#10;4.Confirm and complete the transaction." textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="180.0" prefWidth="373.0" style="-fx-background-color: rgb(221, 75, 57);">
+               <children>
+                  <Pane prefHeight="180.0" prefWidth="40.0" style="-fx-background-color: rgb(199, 68, 51);" />
+                  <Label layoutX="41.0" layoutY="1.0" prefHeight="30.0" prefWidth="186.0" text="Bank Account" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="68.0" layoutY="27.0" prefHeight="6.0" prefWidth="277.0" />
+                  <Label layoutX="73.0" layoutY="29.0" prefHeight="123.0" prefWidth="267.0" text="1. Go to Bank Account option.&#10;2.Enter paybill number XXXXXX.&#10;3.Enter your bill amount.&#10;4.Confirm and complete the transaction." textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="180.0" prefWidth="373.0" style="-fx-background-color: rgb(0, 173, 216);">
+               <children>
+                  <Pane prefHeight="180.0" prefWidth="40.0" style="-fx-background-color: rgb(0, 149, 186);" />
+                  <Label layoutX="41.0" layoutY="1.0" prefHeight="30.0" prefWidth="186.0" text="Card Payment" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="68.0" layoutY="27.0" prefHeight="6.0" prefWidth="277.0" />
+                  <Label layoutX="73.0" layoutY="33.0" prefHeight="123.0" prefWidth="267.0" text="1. Go to Card option.&#10;2.Enter Credit/Debit Card Number.&#10;3.Enter CVV number.&#10;4.Enter your card's expiry datet.&#10;5.Confirm and complete the transaction." textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="capane" layoutX="58.0" layoutY="-7.0" prefHeight="193.0" prefWidth="373.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Label layoutX="20.0" layoutY="6.0" prefHeight="38.0" prefWidth="287.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Payment Methods" />
+      <VBox layoutX="402.0" layoutY="11.0" prefHeight="607.0" prefWidth="613.0" spacing="15.0" style="-fx-background-color: rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-padding: 16 16 16 16;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="581.0" style="-fx-font-size: 16pt; -fx-font-weight: bold;" text="Record Payment" textAlignment="CENTER" />
+            <VBox prefHeight="53.0" prefWidth="581.0">
+               <children>
+                  <Label text="Mode of Payment" textFill="#837f7f">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="48.0" prefWidth="524.0" spacing="10.0">
+                     <children>
+                        <JFXRadioButton fx:id="E1" onAction="#radioselect" selected="true" text="EasyGo Wallet">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="cash" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="B1" onAction="#radioselect" text="Bank Account" toggleGroup="$cash" />
+                        <JFXRadioButton fx:id="C2" onAction="#radioselect" text="Card" toggleGroup="$cash" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <JFXTextField fx:id="pin" focusColor="#00c0ef" labelFloat="true" maxWidth="577.0" minWidth="524.0" prefHeight="33.0" prefWidth="577.0" promptText="Account Pin" unFocusColor="#656464">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <VBox prefHeight="47.0" prefWidth="581.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="230.0" text="Payment for :" textFill="#837f7f">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <JFXComboBox fx:id="C1" onAction="#combo" prefHeight="37.0" prefWidth="542.0">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </JFXComboBox>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="hpane" prefHeight="246.0" prefWidth="581.0" />
+            <VBox prefHeight="31.0" prefWidth="581.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="114.0" style="-fx-text-fill: #AAAAAA;" text="Date" />
+                  <JFXDatePicker prefHeight="28.0" prefWidth="311.0" />
+               </children>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="581.0">
+               <children>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#recordpayment" prefHeight="32.0" prefWidth="249.0" ripplerFill="#e83030" style="-fx-background-color: rgb(0, 192, 239);" text="Record payment" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

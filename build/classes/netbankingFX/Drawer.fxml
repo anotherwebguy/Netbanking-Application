@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="188.0" style="-fx-background-color: #1a1919; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="netbankingFX.DrawerController">
+   <children>
+      <StackPane prefHeight="120.0" prefWidth="188.0">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Label alignment="CENTER" prefHeight="34.0" prefWidth="188.0" style="-fx-font-weight: bold;" text="Welcome!!" textFill="#b757dd">
+         <font>
+            <Font name="Bookman Old Style" size="26.0" />
+         </font>
+         <effect>
+            <Glow level="0.53" />
+         </effect>
+      </Label>
+      <Separator opacity="0.18" prefWidth="200.0" />
+      <JFXButton fx:id="homebtn" accessibleText="homeMenu" alignment="CENTER" prefHeight="50.0" prefWidth="188.0" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/dashboard.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator opacity="0.18" prefWidth="200.0" />
+      <JFXButton fx:id="orderbtn" accessibleText="ordersMenu" alignment="CENTER" layoutX="10.0" layoutY="172.0" prefHeight="50.0" prefWidth="188.0" text="Passbook" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_book_32px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator opacity="0.18" prefWidth="200.0" />
+      <JFXButton fx:id="paymentbtn" accessibleText="paymentMenu" alignment="CENTER" layoutX="10.0" layoutY="248.0" prefHeight="50.0" prefWidth="188.0" text="Payments" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/pay.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator opacity="0.18" prefWidth="200.0" />
+      <JFXButton fx:id="aboutbtn" accessibleText="aboutMenu" alignment="CENTER" layoutX="10.0" layoutY="217.0" prefHeight="50.0" prefWidth="188.0" text="Help &amp; Support" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/about.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator opacity="0.18" prefWidth="200.0" />
+      <JFXButton fx:id="signoutbtn" accessibleText="logoutMenu" alignment="CENTER" layoutX="10.0" layoutY="262.0" onAction="#logOut" prefHeight="50.0" prefWidth="188.0" text="Sign Out" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/signout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator opacity="0.18" prefWidth="200.0" />
+      <JFXButton fx:id="exitbtn" accessibleText="exitMenu" alignment="CENTER" layoutX="10.0" layoutY="307.0" onAction="#exit" prefHeight="50.0" prefWidth="188.0" text="Exit" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator opacity="0.18" prefWidth="200.0" />
+   </children>
+</VBox>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="280.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="netbankingFX.CoverController">
+   <children>
+      <ImageView fitHeight="279.0" fitWidth="449.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/SBI-Net-Banking.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="8.0" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #ADD8E6;" text="EasyGo">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="9.0" layoutY="110.0" prefHeight="31.0" prefWidth="73.0" style="-fx-background-color: #ADD8E6;" text="EasyGo">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Label>
+      <JFXButton fx:id="btnPro" buttonType="RAISED" layoutX="210.0" layoutY="224.0" onAction="#btnAction" ripplerFill="#c144dd" style="-fx-background-color: #191970;" text="Proceed...." textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

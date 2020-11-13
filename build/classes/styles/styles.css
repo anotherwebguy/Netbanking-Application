@@ -1,0 +1,96 @@
+
+
+/** TableView**/
+
+.table-view{
+    -fx-table-cell-border-color: transparent;
+    -fx-effect: dropshadow( gaussian,rgba(0,0,0,0.16),5,0,0,2);
+    -fx-background-radius: 3px;
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: white;
+}
+.table-view .column-header:last-visible{
+    -fx-border-width: 0 0 1 0;
+}
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+}
+.table-view .column-header{
+    -fx-border-width: 0 1 1 0;
+    -fx-border-color: rgba(1,1,1,0.15);
+}
+.table-view .column-header .label{
+    -fx-font-size:14px;
+    -fx-text-fill: -color-primary;
+    -fx-padding:16 0 16 0;
+    -fx-alignment:CENTER-LEFT;
+    -fx-font-weight:400;
+}
+.table-view .table-row-cell .table-cell{
+    -fx-border-width: 0 0 0 0;
+}
+
+.table-view .table-row-cell:selected .table-cell{
+    -fx-text-fill: -color-dark-primary;
+    -fx-border-width: 0 0 0 0;
+}
+.table-view .table-row-cell:selected{
+    -fx-background-color: rgba(0,0,0,0.04);
+    -fx-background-insets:0;
+}
+
+
+.table-view .table-row-cell{
+    -fx-background-color:transparent;
+    -fx-background-insets:0;
+}
+
+.table-view .table-column{
+    -fx-alignment:CENTER-LEFT;
+    -fx-padding:0 16 0 16;
+}
+
+.table-view .table-cell{
+    -fx-font-size: 13px;
+}
+.table-view .table-cell .ripple-circle{
+    -fx-fill:#2196F3;
+}
+.table-view .table-cell > .text-field{
+    -fx-background-color:transparent;
+    -fx-padding:0 8 8 8;
+    -fx-background-insets: 0;
+    -fx-border-width:0 0 2 0;
+    -fx-border-color: -color-primary;
+}
+
+.table-view .corner{
+    -fx-background-color:transparent;
+}
+
+
+/*Titled Pane*/
+.blue-titledPane{
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-font-size:13;
+}
+.blue-titledPane>.title{
+    -fx-background-color: #00BCD4,#00C0EF,#00BCD4;
+    -fx-font-weight:bold;
+    -fx-background-insets: 0, 0.1, 0.9;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em;    
+}
+.blue-titledPane:focused > .title {
+    -fx-color: #00008B;
+}
+
+.blue-titledPane> .title> .arrow-button .arrow{
+    -fx-background-color: white;
+}

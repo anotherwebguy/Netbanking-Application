@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleText="ordersMenu" prefHeight="623.0" prefWidth="1020.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ordersbookings.OrdersandbookingsController">
+   <children>
+      <JFXTabPane prefHeight="623.0" prefWidth="1020.0">
+         <tabs>
+            <Tab text="Recharge &amp; Bill Payments">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.6689419795221843" orientation="VERTICAL" prefHeight="588.0" prefWidth="1020.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="392.0" prefWidth="1018.0">
+                                 <children>
+                                    <TableView fx:id="table1" layoutX="7.0" layoutY="38.0" prefHeight="348.0" prefWidth="1003.0" style="-fx-effect: dropshadow( gaussian,rgba(0,0,0,0.16),5,0,0,2); -fx-background-radius: 3px; -fx-background-color: white; -fx-background-insets: 0;">
+                                      <columns>
+                                        <TableColumn fx:id="Pay_info" editable="false" prefWidth="191.0" text="Payments Info" />
+                                        <TableColumn fx:id="mob_no" editable="false" prefWidth="147.0" text="Mobile No." />
+                                          <TableColumn fx:id="operat" editable="false" prefWidth="122.0" text="Operator" />
+                                          <TableColumn fx:id="con_id" editable="false" prefWidth="140.0" text="Consumer Id" />
+                                          <TableColumn fx:id="con_no" editable="false" prefWidth="139.0" text="Consumer No." />
+                                          <TableColumn fx:id="board" editable="false" minWidth="8.0" prefWidth="150.0" text="Board" />
+                                          <TableColumn fx:id="amt_paid" editable="false" minWidth="5.0" prefWidth="113.0" text="Amount Paid" />
+                                      </columns>
+                                    </TableView>
+                                    <TextField layoutX="704.0" layoutY="5.0" prefHeight="30.0" prefWidth="280.0" promptText="Search..." style="-fx-background-radius: 15.0; -fx-border-radius: 15.0;" />
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="951.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/search.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="182.0" prefWidth="1018.0">
+                                 <children>
+                                    <TitledPane animated="false" prefHeight="191.0" prefWidth="1020.0" styleClass="blue-titledPane">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox layoutX="19.0" layoutY="9.0" prefHeight="142.0" prefWidth="147.0" style="-fx-background-color: rgb(0, 192, 239); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                                                   <children>
+                                                      <Label alignment="CENTER" prefHeight="142.0" prefWidth="147.0" style="-fx-font-weight: bold; -fx-font-size: 20px;" text="Pay Bills" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="26.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="40.0" left="20.0" right="20.0" top="40.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <VBox layoutX="184.0" layoutY="11.0" prefHeight="142.0" prefWidth="189.0" style="-fx-background-color: rgb(221, 75, 57); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                                                   <children>
+                                                      <Label alignment="CENTER" prefHeight="62.0" prefWidth="158.0" style="-fx-font-weight: bold; -fx-font-size: 20px;" text="Transfer Money" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="26.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="40.0" left="20.0" right="20.0" top="40.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <VBox layoutX="395.0" layoutY="11.0" prefHeight="142.0" prefWidth="147.0" style="-fx-background-color: rgb(0, 166, 90); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                                                   <children>
+                                                      <Label alignment="CENTER" prefHeight="142.0" prefWidth="147.0" style="-fx-font-weight: bold; -fx-font-size: 15px;" text="Track your&#10;wallet and&#10;Account" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="26.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="40.0" left="20.0" right="20.0" top="40.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <VBox layoutX="566.0" layoutY="11.0" prefHeight="142.0" prefWidth="389.0" style="-fx-background-color: rgb(243, 156, 18); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                                                   <children>
+                                                      <Label alignment="CENTER" prefHeight="62.0" prefWidth="350.0" style="-fx-font-weight: bold; -fx-font-size: 18px;" text="All in One Netbanking Application.&#10;EasyGo NetbankingFX" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="26.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="40.0" left="20.0" right="20.0" top="40.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children></AnchorPane>
+                                      </content>
+                                    </TitledPane>
+                                 </children></AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Transfers">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.6706484641638225" layoutY="-2.0" orientation="VERTICAL" prefHeight="588.0" prefWidth="1020.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="1018.0">
+                                 <children>
+                                    <TableView fx:id="table2" layoutX="7.0" layoutY="39.0" prefHeight="350.0" prefWidth="1004.0" style="-fx-effect: dropshadow( gaussian,rgba(0,0,0,0.16),5,0,0,2); -fx-background-radius: 3px; -fx-background-color: white; -fx-background-insets: 0;">
+                                       <columns>
+                                          <TableColumn fx:id="trans_info" editable="false" prefWidth="312.0" text="Transfers Info" />
+                                          <TableColumn fx:id="to" editable="false" minWidth="0.0" prefWidth="243.0" text="To" />
+                                          <TableColumn fx:id="Acc_no1" editable="false" minWidth="0.0" prefWidth="224.0" text="Account No." />
+                                          <TableColumn fx:id="Amt_paid1" editable="false" minWidth="0.0" prefWidth="224.0" text="Amount Paid" />
+                                       </columns>
+                                    </TableView>
+                                    <TextField layoutX="716.0" layoutY="4.0" prefHeight="30.0" prefWidth="280.0" promptText="Search..." style="-fx-background-radius: 15.0; -fx-border-radius: 15.0;" />
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="960.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/search.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="234.0" prefWidth="539.0">
+                                 <children>
+                                    <TitledPane animated="false" prefHeight="191.0" prefWidth="1020.0" styleClass="blue-titledPane" text="Donate to PM CARES FUND">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ImageView fitHeight="102.0" fitWidth="294.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icons/corona-fight.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label alignment="CENTER" layoutX="14.0" layoutY="111.0" prefHeight="34.0" prefWidth="294.0" style="-fx-font-weight: bold;" text="Help India Fight back Corona">
+                                                   <font>
+                                                      <Font name="Bookman Old Style" size="27.0" />
+                                                   </font>
+                                                   <effect>
+                                                      <DropShadow />
+                                                   </effect>
+                                                </Label>
+                                                <JFXTextField fx:id="txtname" layoutX="367.0" layoutY="14.0" prefHeight="29.0" prefWidth="323.0" promptText="Name" />
+                                                <JFXTextField fx:id="txtamt" layoutX="367.0" layoutY="97.0" prefHeight="29.0" prefWidth="323.0" promptText="Ammount" />
+                                                <VBox layoutX="352.0" layoutY="50.0" prefHeight="47.0" prefWidth="338.0">
+                                                   <children>
+                                                      <Label prefHeight="19.0" prefWidth="117.0" text="Mode of Payment" textFill="#837f7f">
+                                                         <VBox.margin>
+                                                            <Insets left="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="524.0" spacing="10.0">
+                                                         <children>
+                                                            <JFXRadioButton fx:id="e" selected="true" text="EasyGo Wallet">
+                                                               <toggleGroup>
+                                                                  <ToggleGroup fx:id="cash" />
+                                                               </toggleGroup>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton fx:id="b" text="Bank Account" toggleGroup="$cash" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="744.0" layoutY="62.0" onAction="#record" prefHeight="51.0" prefWidth="247.0" ripplerFill="#e83030" style="-fx-background-color: rgb(0, 192, 239);" text="Record payment" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </TitledPane>
+                                 </children></AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Payments Recieved &amp; Info">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.576068376068376" layoutY="-1.0" orientation="VERTICAL" prefHeight="587.0" prefWidth="1020.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="997.0">
+                                 <children>
+                                    <TitledPane animated="false" layoutY="-1.0" prefHeight="341.0" prefWidth="1020.0" style="-fx-text-alignment: center; -fx-font-size: 13; -fx-font-weight: bold;" styleClass="blue-titledPane" text="Info">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1006.0" style="-fx-effect: dropshadow( gaussian,rgba(0,0,0,0.16),5,0,0,2);">
+                                             <effect>
+                                                <Lighting bumpInput="$null" diffuseConstant="1.37" specularConstant="0.46" surfaceScale="6.15">
+                                                   <light>
+                                                      <Light.Distant color="#2f2424" />
+                                                   </light>
+                                                </Lighting>
+                                             </effect>
+                                             <children>
+                                                <VBox layoutX="5.0" layoutY="4.0" prefHeight="301.0" prefWidth="315.0" style="-fx-background-color: #00A8FF;">
+                                                   <children>
+                                                      <HBox prefHeight="48.0" prefWidth="272.0" spacing="20.0" style="-fx-background-color: #00A0F3;">
+                                                         <children>
+                                                            <ImageView fitHeight="42.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../icons/icons8_statistics_50px_2.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label prefHeight="45.0" prefWidth="186.0" text="Passbook Statistics" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Bookman Old Style" size="19.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <VBox prefHeight="75.0" prefWidth="272.0">
+                                                         <children>
+                                                            <Label prefHeight="35.0" prefWidth="264.0" style="-fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Recharge and Bill paid">
+                                                               <padding>
+                                                                  <Insets left="10.0" />
+                                                               </padding>
+                                                            </Label>
+                                                            <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                                                               <children>
+                                                                  <JFXProgressBar progress="1.0" />
+                                                                  <Label style="-fx-font-weight: bold; -fx-font-size: 15pt; -fx-text-fill: white;" text="123" />
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets left="10.0" />
+                                                               </padding>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox prefHeight="70.0" prefWidth="272.0">
+                                                         <children>
+                                                            <Label prefHeight="34.0" prefWidth="256.0" style="-fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Money transfers done">
+                                                               <padding>
+                                                                  <Insets left="10.0" />
+                                                               </padding>
+                                                            </Label>
+                                                            <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                                                               <children>
+                                                                  <JFXProgressBar progress="0.43" />
+                                                                  <Label style="-fx-font-weight: bold; -fx-font-size: 15pt; -fx-text-fill: white;" text="39" />
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets left="10.0" />
+                                                               </padding>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox prefHeight="83.0" prefWidth="272.0">
+                                                         <children>
+                                                            <Label prefHeight="35.0" prefWidth="258.0" style="-fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Payments recieved">
+                                                               <padding>
+                                                                  <Insets left="10.0" />
+                                                               </padding>
+                                                            </Label>
+                                                            <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="100.0" spacing="20.0">
+                                                               <children>
+                                                                  <JFXProgressBar progress="0.37" />
+                                                                  <Label style="-fx-font-weight: bold; -fx-font-size: 15pt; -fx-text-fill: white;" text="45" />
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets left="10.0" />
+                                                               </padding>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </VBox>
+                                                <TextArea fx:id="t1" layoutX="611.0" layoutY="6.0" prefHeight="302.0" prefWidth="350.0" />
+                                                <JFXButton buttonType="RAISED" layoutX="453.0" layoutY="126.0" onAction="#print" prefHeight="54.0" prefWidth="129.0" ripplerFill="BLACK" style="-fx-background-color: rgb(243, 156, 18);" text="Print Reciept" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </TitledPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TableView fx:id="table3" layoutY="21.0" prefHeight="226.0" prefWidth="1020.0" style="-fx-effect: dropshadow( gaussian,rgba(0,0,0,0.16),5,0,0,2); -fx-background-radius: 3px; -fx-background-color: white; -fx-background-insets: 0;">
+                                       <columns>
+                                          <TableColumn fx:id="recieved_info" editable="false" prefWidth="287.0" text="Recieved Money Info" />
+                                          <TableColumn fx:id="from" editable="false" minWidth="0.0" prefWidth="271.0" text="From" />
+                                          <TableColumn fx:id="Acc_no2" editable="false" minWidth="0.0" prefWidth="227.0" text="Account No." />
+                                          <TableColumn fx:id="Amt_recieved" editable="false" minWidth="0.0" prefWidth="232.0" text="Amount Recieved" />
+                                       </columns>
+                                    </TableView>
+                                    <Label alignment="CENTER" layoutX="-1.0" prefHeight="23.0" prefWidth="1020.0" style="-fx-font-weight: bold;" text="Payments recieved">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton buttonType="RAISED" layoutX="909.0" layoutY="-3.0" onAction="#refersh" prefHeight="9.0" prefWidth="101.0" style="-fx-background-color: green;" text="Referesh" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="246.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentview.RechargeController">
+   <children>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="31.0" prefWidth="582.0" style="-fx-background-color: orange; -fx-font-weight: bold;" text="Mobile Recharge" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="187.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8_mobile_50px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtmob" focusColor="#00c0ef" labelFloat="true" layoutX="113.0" layoutY="37.0" maxWidth="575.0" minWidth="304.0" prefHeight="35.0" prefWidth="357.0" promptText="Mobile Number" unFocusColor="#656464">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <HBox alignment="CENTER" layoutX="113.0" layoutY="72.0" prefHeight="48.0" prefWidth="357.0" spacing="10.0">
+         <children>
+            <JFXRadioButton selected="true" text="Prepaid">
+               <toggleGroup>
+                  <ToggleGroup fx:id="cash" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton text="Postpaid" toggleGroup="$cash" />
+         </children>
+      </HBox>
+      <VBox layoutX="61.0" layoutY="114.0" prefHeight="42.0" prefWidth="409.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="230.0" text="Select Operator" textFill="#837f7f">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <JFXComboBox fx:id="C1" prefHeight="37.0" prefWidth="542.0">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXComboBox>
+         </children>
+      </VBox>
+      <JFXButton buttonType="RAISED" layoutX="496.0" layoutY="213.0" onAction="#save" prefHeight="25.0" prefWidth="61.0" ripplerFill="WHITE" style="-fx-background-color: blue;" text="Save" textFill="WHITE" />
+      <JFXTextField fx:id="amt" focusColor="#00c0ef" labelFloat="true" layoutX="113.0" layoutY="171.0" maxWidth="575.0" minWidth="357.0" prefHeight="35.0" prefWidth="357.0" promptText="Amount to be paid" unFocusColor="#656464">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleText="walletMenu" prefHeight="355.0" prefWidth="519.0" style="-fx-background-color: rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontpage.WalletinController">
+   <children>
+      <Pane layoutY="178.0" prefHeight="177.0" prefWidth="519.0" style="-fx-background-color: #6b024d;" />
+      <AnchorPane layoutX="54.0" layoutY="14.0" prefHeight="291.0" prefWidth="409.0" style="-fx-background-color: rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+         <children>
+            <Label layoutX="142.0" layoutY="6.0" prefHeight="17.0" prefWidth="126.0" text="EasyGo Wallet Balance" textFill="#907d7d" />
+            <Label fx:id="label" alignment="CENTER" layoutX="142.0" layoutY="46.0" prefHeight="35.0" prefWidth="126.0">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="46.0" prefHeight="46.0" prefWidth="43.0" text="Rs.">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="268.0" layoutY="46.0" prefHeight="46.0" prefWidth="43.0" text="/-">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Separator layoutX="90.0" layoutY="101.0" prefHeight="4.0" prefWidth="217.0" />
+            <JFXButton buttonType="RAISED" layoutX="122.0" layoutY="117.0" onAction="#ref" prefHeight="39.0" prefWidth="166.0" style="-fx-background-color: #6b024d;" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_rotate_right_26px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Separator layoutX="139.0" layoutY="29.0" prefHeight="4.0" prefWidth="126.0" />
+            <Label layoutX="141.0" layoutY="178.0" prefHeight="17.0" prefWidth="126.0" text="Your Account Balance" textFill="#907d7d" />
+            <Separator layoutX="141.0" layoutY="203.0" prefHeight="4.0" prefWidth="126.0" />
+            <Label layoutX="96.0" layoutY="214.0" prefHeight="46.0" prefWidth="43.0" text="Rs.">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="label2" alignment="CENTER" layoutX="139.0" layoutY="214.0" prefHeight="35.0" prefWidth="126.0">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="266.0" layoutY="214.0" prefHeight="46.0" prefWidth="43.0" text="/-">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

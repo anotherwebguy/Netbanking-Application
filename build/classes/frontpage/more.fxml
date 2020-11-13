@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleText="moreMenu" prefHeight="355.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontpage.MoreController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="70.0" layoutY="133.0" onAction="#insurance" prefHeight="67.0" prefWidth="136.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Insurance" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_treatment_80px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="304.0" layoutY="133.0" onAction="#water" prefHeight="67.0" prefWidth="136.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Water&#10;Bill" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_water_26px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="181.0" layoutY="230.0" onAction="#flight" prefHeight="67.0" prefWidth="147.0" ripplerFill="WHITE" style="-fx-background-color: black;" text="Flight&#10;Tickets" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_airport_24px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

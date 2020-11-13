@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="246.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentview.DthController">
+   <children>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="31.0" prefWidth="582.0" style="-fx-background-color: green; -fx-font-weight: bold;" text="DTH Recharge" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="199.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8_dish_tv_50px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="con_id" focusColor="#00c0ef" labelFloat="true" layoutX="113.0" layoutY="39.0" maxWidth="575.0" minWidth="304.0" prefHeight="35.0" prefWidth="357.0" promptText="Consumer Id" unFocusColor="#656464">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <VBox layoutX="65.0" layoutY="90.0" prefHeight="47.0" prefWidth="431.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="230.0" text="Select Operator" textFill="#837f7f">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <JFXComboBox fx:id="C1" prefHeight="29.0" prefWidth="407.0">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXComboBox>
+         </children>
+      </VBox>
+      <JFXButton buttonType="RAISED" layoutX="497.0" layoutY="207.0" onAction="#save" prefHeight="25.0" prefWidth="61.0" ripplerFill="WHITE" style="-fx-background-color: blue;" text="Save" textFill="WHITE" />
+      <JFXTextField fx:id="amt" focusColor="#00c0ef" labelFloat="true" layoutX="112.0" layoutY="158.0" maxWidth="575.0" minWidth="363.0" prefHeight="35.0" prefWidth="363.0" promptText="Amount to be paid" unFocusColor="#656464">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

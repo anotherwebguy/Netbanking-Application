@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontpage.AirController">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="685.0" layoutX="6.0" layoutY="50.0" opacity="0.23" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/aeroplane.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_CENTER" layoutY="6.0" prefHeight="50.0" prefWidth="697.0" text="FLIGHT BOOKING">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combo1" layoutX="127.0" layoutY="103.0" onAction="#select" opacity="0.98" prefHeight="38.0" prefWidth="167.0" promptText="Select Source" />
+      <RadioButton layoutX="14.0" layoutY="56.0" mnemonicParsing="false" text="One Way">
+         <toggleGroup>
+            <ToggleGroup fx:id="board" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="114.0" layoutY="56.0" mnemonicParsing="false" text="Round Trip" toggleGroup="$board" />
+      <ComboBox fx:id="combo11" layoutX="401.0" layoutY="103.0" onAction="#select" opacity="0.98" prefHeight="38.0" prefWidth="167.0" promptText="Select Destination" />
+      <ImageView fitHeight="38.0" fitWidth="80.0" layoutX="330.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/planesymbol.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="departdate" layoutX="64.0" layoutY="180.0" prefHeight="25.0" prefWidth="230.0" promptText="Select Departure Date" />
+      <DatePicker fx:id="departdate1" layoutX="401.0" layoutY="180.0" prefHeight="25.0" prefWidth="230.0" promptText="Add Return Date" />
+      <Label layoutX="64.0" layoutY="167.0" prefHeight="17.0" prefWidth="167.0" text="Departure Date" />
+      <Label layoutX="401.0" layoutY="167.0" prefHeight="17.0" prefWidth="167.0" text="Return Date" />
+      <Label layoutX="65.0" layoutY="224.0" opacity="0.82" prefHeight="25.0" prefWidth="125.0" text="Number Of Travellers" />
+      <JFXTextField fx:id="no" layoutX="194.0" layoutY="224.0" opacity="0.77" prefHeight="25.0" prefWidth="179.0" promptText="Enter number of travellers" />
+      <JFXComboBox fx:id="combo2" layoutX="194.0" layoutY="271.0" onAction="#select" prefHeight="25.0" prefWidth="179.0" />
+      <Label layoutX="65.0" layoutY="271.0" prefHeight="25.0" prefWidth="125.0" text="Select Class" textAlignment="CENTER" />
+      <JFXButton buttonType="RAISED" layoutX="450.0" layoutY="271.0" onAction="#proceed" prefHeight="31.0" prefWidth="89.0" ripplerFill="WHITE" style="-fx-background-color: blue; -fx-background-radius: 15.0; -fx-border-radius: 15.0;" text="Proceed..." textFill="WHITE" />
+      <TextArea fx:id="t1" layoutX="186.0" layoutY="305.0" prefHeight="184.0" prefWidth="365.0" />
+   </children>
+</AnchorPane>

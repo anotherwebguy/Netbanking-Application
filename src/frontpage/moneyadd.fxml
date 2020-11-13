@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleText="addMenu" prefHeight="355.0" prefWidth="519.0" style="-fx-background-color: rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0)rgb(255.0, 255.0, 255.0); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 4.0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontpage.MoneyaddController">
+   <children>
+      <Separator layoutX="9.0" layoutY="34.0" prefHeight="5.0" prefWidth="325.0" />
+      <Label layoutX="14.0" layoutY="50.0" prefHeight="28.0" prefWidth="154.0" text="Account Number:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="97.0" prefHeight="28.0" prefWidth="154.0" text="Enter Amount:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtacc" layoutX="219.0" layoutY="49.0" prefHeight="31.0" prefWidth="205.0" promptText="1596 XXXX XXXX" />
+      <TextField fx:id="txtamt" layoutX="219.0" layoutY="96.0" prefHeight="31.0" prefWidth="205.0" promptText="1000" />
+      <Label layoutX="14.0" layoutY="125.0" prefHeight="28.0" prefWidth="205.0" text="Please enter the emount to be transfered to&#10;your netbanking Wallet">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="14.0" layoutY="164.0" />
+      <Label fx:id="L1" layoutX="219.0" layoutY="209.0" prefHeight="28.0" prefWidth="154.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="211.0" mnemonicParsing="false" onAction="#otpgen" prefHeight="30.0" prefWidth="120.0" text="Generate OTP:" />
+      <Separator layoutX="20.0" layoutY="247.0" prefHeight="5.0" prefWidth="480.0" />
+      <Label layoutX="14.0" layoutY="253.0" prefHeight="28.0" prefWidth="154.0" text="Enter OTP:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ot" layoutX="219.0" layoutY="252.0" prefHeight="31.0" prefWidth="205.0" promptText="4982" />
+      <JFXSpinner fx:id="spin" layoutX="228.0" layoutY="295.0" radius="20.0" />
+      <JFXButton buttonType="RAISED" layoutX="86.0" layoutY="308.0" onAction="#submit" prefHeight="28.0" prefWidth="99.0" ripplerFill="#2c2c2c" style="-fx-background-color: rgb(0, 192, 239); -fx-background-radius: 15.0; -fx-border-radius: 15.0;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="335.0" layoutY="305.0" onAction="#cancel" prefHeight="28.0" prefWidth="99.0" ripplerFill="#2c2c2c" style="-fx-background-color: orange; -fx-background-radius: 15.0; -fx-border-radius: 15.0;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="519.0" spacing="20.0" style="-fx-background-color: #00A65A;">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/addmoney.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="35.0" prefWidth="259.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 17px;" text="Add Money to Wallet">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <VBox layoutY="155.0" prefHeight="35.0" prefWidth="411.0">
+         <children>
+            <Label style="-fx-text-fill: #AAAAAA;" text="Date" />
+            <JFXDatePicker fx:id="date" prefHeight="19.0" prefWidth="276.0" />
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="L2" layoutX="315.0" layoutY="285.0" prefHeight="20.0" prefWidth="193.0" />
+   </children>
+</AnchorPane>

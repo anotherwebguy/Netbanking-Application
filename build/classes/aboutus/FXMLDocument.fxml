@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleText="aboutMenu" prefHeight="623.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORNFLOWERBLUE" height="65.0" layoutX="49.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="920.0" />
+      <Label layoutX="470.0" layoutY="77.0" text="About Us" textFill="#f8f6f6">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="28.0" text="EasyGo 24x7 Helpline">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="50.0" layoutY="165.0" prefHeight="183.0" prefWidth="920.0" style="-fx-background-color: rgb(255.0,255.0,255.0); -fx-effect: dropshadow(gaussian,rgb(0.0,0.0,0.0,0.15),6.0,0.7,0.0,1.5);">
+         <children>
+            <Label layoutX="38.0" layoutY="83.0" text="Team: Clover Coders">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="119.0" text="Members: Mohit Singh, Sarvesh Kale, Avdhoot Jadhav">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="28.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="NetBanking FX System allows the user to connect to his/her own bank account and provides many features&#10;like paying water bill, electricity bill etc." />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="381.0" prefHeight="200.0" prefWidth="482.0" style="-fx-background-color: rgb(255.0,255.0,255.0); -fx-effect: dropshadow(gaussian,rgb(0.0,0.0,0.0,0.15),6.0,0.7,0.0,1.5);">
+         <children>
+            <Label layoutX="224.0" layoutY="14.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Help" />
+            <Label layoutX="16.0" layoutY="48.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="First the user needs to fill all the details and register in the&#10;app. Then he/she needs to add all the required id proof and&#10;enter bank account number and name of bank. No E-KYC is &#10;needed. Now the user can enjoy the features of system and it &#10;has a user friendly experience.&#10;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="577.0" layoutY="381.0" prefHeight="200.0" prefWidth="395.0" style="-fx-background-color: rgb(255.0,255.0,255.0); -fx-effect: dropshadow(gaussian,rgb(0.0,0.0,0.0,0.15),6.0,0.7,0.0,1.5);">
+         <children>
+            <Label layoutX="169.0" layoutY="14.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Support" />
+            <Label layoutX="14.0" layoutY="51.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="If you like our project then like this project on &#10;Github.&#10;&#10;Hope so you liked our project!!" />
+            <Label layoutX="219.0" layoutY="166.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="~Team Clover Coders!" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
