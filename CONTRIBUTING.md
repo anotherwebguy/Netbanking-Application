@@ -21,4 +21,4 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Code of Conduct
 
-Check the code of conduct [here](https://github.com/anotherwebguy/Canteen-Automation-App/blob/master/CODE_OF_CONDUCT.md).
+Check the code of conduct [here](https://github.com/anotherwebguy/Netbanking-Application/blob/master/CODE_OF_CONDUCT.md).
