@@ -1,5 +1,5 @@
 # Netbanking Application ![E-banking](https://cdn.iconscout.com/icon/free/png-64/netbanking-credit-debit-card-bank-transaction-32302.png)
-  An desktop appliaction prototype of an actual netbanking application.<br />
+  An desktop appliaction prototype of an actual Netbanking application.<br />
   The applications can perform all sorts of functions that an netbanking app should have.
   
 ## Overview
